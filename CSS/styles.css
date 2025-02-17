@@ -940,3 +940,8 @@ a{
   }
 
 }
+
+/* Custom Theme Nav from header file */
+.custom-nav{
+  display: flex;
+}

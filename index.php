@@ -12,73 +12,9 @@
   
 </head>
 <body>
-    <!--------------------------- Navbar------------------------>
-    <nav class="navbar">
-      <div class="navbar-left">
-        <!-- linkedin Logo -->
-        <a href="index.html" class="logo">
-          <img src="<?php  bloginfo('template_directory')?>/images/logo.png" alt="logo image">
-        </a>
-        <div class="search-box">
-            <img src="<?php  bloginfo('template_directory')?>/images/search.png" alt="search image">
-            <input type="text" placeholder="Search">
-        </div>
-      </div>
-      <div class="navbar-center">
-        <!-- Menulist -->
-        <ul>
-          <li><a href="#" class="active"><img src="<?php  bloginfo('template_directory')?>/images/home.png" alt="Home image"><span>Home</span></a></li>
-          <li><a href="#"><img src="<?php  bloginfo('template_directory')?>/images/network.png" alt="Home image"><span>My Network</span></a></li>
-          <li><a href="#"><img src="<?php  bloginfo('template_directory')?>/images/jobs.png" alt="Home image"><span>Jobs</span></a></li>
-          <li><a href="#"><img src="<?php  bloginfo('template_directory')?>/images/message.png" alt="Home image"><span>Messaging</span></a></li>
-          <li><a href="#"><img src="<?php  bloginfo('template_directory')?>/images/notification.png" alt="Home image"><span>Notifications</span></a></li>
-        </ul>
-      </div>
-      <div class="navbar-right">
-        <div class="online">
-           <!-- user image -->
-        <img src="<?php  bloginfo('template_directory')?>/images/profile-pic.jpg" alt="User image" class="nav-profile-img" onclick="toggleMenu()">
-        </div>
-      </div>
-      <!-------------------- Profile dropdown Menu ------------------->
-      <div class="profile-menu-wrap" id="profile-menu">
-        <div class="profile-menu">
-          <div class="user-info">
-            <img src="<?php  bloginfo('template_directory')?>/images/profile-pic.jpg" alt="">
-            <div>
-              <h3>Akshata</h3>
-              <a href="profile.html">See your profile</a>
-            </div>
-          </div>
-          <hr>
-          <a href="#" class="profile-menu-link">
-            <img src="<?php  bloginfo('template_directory')?>/images/feedback.png">
-            <p>Give Feedback</p>
-            <span>></span>
-          </a>
-          <a href="#" class="profile-menu-link">
-            <img src="<?php  bloginfo('template_directory')?>/images/setting.png">
-            <p>Settings & Privacy</p>
-            <span>></span>
-          </a>
-          <a href="#" class="profile-menu-link">
-            <img src="<?php  bloginfo('template_directory')?>/images/help.png">
-            <p>Help& Support</p>
-            <span>></span>
-          </a>
-          <a href="#" class="profile-menu-link">
-            <img src="<?php  bloginfo('template_directory')?>/images/display.png">
-            <p>Display & Accessibility</p>
-            <span>></span>
-          </a>
-          <a href="#" class="profile-menu-link">
-            <img src="<?php  bloginfo('template_directory')?>/images/logout.png">
-            <p>Logout</p>
-            <span>></span>
-          </a>
-        </div>
-      </div>
-    </nav>
+<?php 
+  get_header();
+?>
 
     <!-------------------------------SIDEBARS-------------------------------->
      <div class="container">
@@ -293,22 +229,11 @@
           <a href="#" class="ad-link">Learn More</a>
         </div>
 
-        <!-------------Useful Links----------------->
-        <div class="sidebar-useful-links">
-          <a href="#">About</a>
-          <a href="#">Accessibility</a>
-          <a href="#">Help Center</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Advertising</a>
-          <a href="#">Get the App</a>
-          <a href="#">More</a>
 
-          <!-- Copyright -->
-          <div class="copyright-msg">
-            <img src="<?php  bloginfo('template_directory')?>/images/logo.png" alt="copyright image">
-            <p>Linkedup &copy; 2024. All right reserved</p>
-          </div>
-        </div>
+        <!-- FOOTER -->
+        <?php
+          get_footer();
+        ?>
 
       </div>
      </div>
